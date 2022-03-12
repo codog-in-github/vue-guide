@@ -5,7 +5,7 @@
 > - webpack
 - Promise
 ### 模块化规范
-模块化规范有很多 `ESM`、`commonJS`等。`ESM`在项目当中被使用，这里对其简单的说明一下，
+模块化规范有很多 `ESM`、`commonJS` 等。`ESM` 在项目当中被使用，这里对其简单的说明一下，
 
 `ESM` 模块化规范
 
@@ -34,8 +34,8 @@ import a from './a.js'
 //     import c from './a.js' ✔️
 
 import { b } from './b.js'
-//这样是引入 b.js 中暴露出的常量 b
-//引入非default的部分时，引入名称需要与变量名称一致
+// 这样是引入 b.js 中暴露出的常量 b
+// 引入非default的部分时，引入名称需要与变量名称一致
 //     import { c } from './b.js' ❌
 
 console.log(a.name) // => 'aaa'
@@ -110,6 +110,7 @@ const params = {
     age: 18,
     sex: SEX_MALE
 }
+
 getUserList(params)
     .then(function (userList){
         // todo
